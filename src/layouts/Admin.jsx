@@ -64,8 +64,7 @@ class Admin extends Component {
       title: <span data-notify="icon" className="pe-7s-gift" />,
       message: (
         <div>
-          Welcome to <b>Light Bootstrap Dashboard</b> - a beautiful freebie for
-          every web developer.
+          Bienvenue au service de <b>Gestion des réservations des salles</b> - de l'UM6P.
         </div>
       ),
       level: level,
@@ -146,8 +145,7 @@ class Admin extends Component {
       title: <span data-notify="icon" className="pe-7s-gift" />,
       message: (
         <div>
-          Welcome to <b>Light Bootstrap Dashboard</b> - a beautiful freebie for
-          every web developer.
+          Bienvenue au service de <b>Gestion des réservations des salles</b> - de l'UM6P.
         </div>
       ),
       level: level,

@@ -25,6 +25,8 @@ import "./assets/css/animate.min.css";
 import "./assets/sass/light-bootstrap-Dashboard-react.scss?v=1.3.0";
 import "./assets/css/demo.css";
 import "./assets/css/pe-icon-7-stroke.css";
+import SignInSide from "./SignInSide";
+import SignInSideSuper from "./SignInSideSuper";
 
 import AdminLayout from "layouts/Admin.jsx";
 
@@ -32,7 +34,8 @@ ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path="/admin" render={props => <AdminLayout {...props} />} />
-      <Redirect from="/" to="/admin/Dashboard" />
+        <Route path="/" component={SignInSide} />
+
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")
