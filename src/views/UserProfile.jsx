@@ -100,7 +100,7 @@ class UserProfile extends Component {
 
                     </Row>
                     <Button bsStyle="info" pullRight fill type="submit">
-                      Mise à jour
+                      Enregistrer
                     </Button>
                     <div className="clearfix" />
                   </form>

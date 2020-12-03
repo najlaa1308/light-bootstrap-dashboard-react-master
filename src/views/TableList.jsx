@@ -20,6 +20,7 @@ import { Grid, Row, Col, Table } from "react-bootstrap";
 
 import Card from "components/Card/Card.jsx";
 import { thArray, tdArray } from "variables/Variables.jsx";
+import Button from "../components/CustomButton/CustomButton";
 
 class TableList extends Component {
   render() {
@@ -44,15 +45,13 @@ class TableList extends Component {
                       </tr>
                     </thead>
                     <tbody>
-                      {tdArray.map((prop, key) => {
-                        return (
-                          <tr key={key}>
-                            {prop.map((prop, key) => {
-                              return <td key={key}>{prop}</td>;
-                            })}
-                          </tr>
-                        );
-                      })}
+                      <tr>
+                        <td>RES-001</td>
+                        <td>31-08-1998</td>
+                        <td>1-A-05</td>
+                        <td>TERRY HENNRY</td>
+                        <td><a>Modifier</a> <a>Annuler</a></td>
+                      </tr>
                     </tbody>
                   </Table>
                 }

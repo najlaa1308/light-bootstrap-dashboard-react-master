@@ -51,16 +51,6 @@ class Accueil extends Component {
       <div className="content">
         <Grid fluid>
           <Row>
-            <Table hover>
-              <thead>
-              <tr>
-
-              </tr>
-              </thead>
-              <tbody>
-
-              </tbody>
-            </Table>
             <Col md={4}>
               <Card
                 statsIcon="fa fa-clock-o"
@@ -79,6 +69,9 @@ class Accueil extends Component {
                 }
               />
             </Col>
+            <col md={8}>
+
+            </col>
           </Row>
 
 
