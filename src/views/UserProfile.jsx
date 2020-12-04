@@ -29,11 +29,14 @@ import { Card } from "components/Card/Card.jsx";
 import { FormInputs } from "components/FormInputs/FormInputs.jsx";
 import { UserCard } from "components/UserCard/UserCard.jsx";
 import Button from "components/CustomButton/CustomButton.jsx";
-
+import CloudUpload from '@material-ui/icons/CloudUpload';
 import avatar from "assets/img/faces/face-3.jpg";
+import { makeStyles } from '@material-ui/core/styles';
+import IconButton from "@material-ui/core/IconButton";
 
 class UserProfile extends Component {
   render() {
+
     return (
       <div className="content">
         <Grid fluid>
@@ -99,9 +102,9 @@ class UserProfile extends Component {
                     <Row>
 
                     </Row>
-                    <Button bsStyle="info" pullRight fill type="submit">
-                      Mise à jour
-                    </Button>
+                      <IconButton aria-label="Mise a jour" color={"primary"}>
+                          <CloudUpload />
+                      </IconButton>
                     <div className="clearfix" />
                   </form>
                 }

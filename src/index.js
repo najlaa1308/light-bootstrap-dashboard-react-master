@@ -27,15 +27,21 @@ import "./assets/css/demo.css";
 import "./assets/css/pe-icon-7-stroke.css";
 import SignInSide from "./SignInSide";
 import SignInSideSuper from "./SignInSideSuper";
-
+import UserEdit from "./components/UserEdit/UserEdit";
 import AdminLayout from "layouts/Admin.jsx";
-
+import UserLayout from "layouts/User.jsx";
+import Ajoutsalle from "./components/Ajoutsalle/Ajoutsalle";
+import Editsalle from "./components/Editsalle/Editsalle";
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path="/admin" render={props => <AdminLayout {...props} />} />
         <Route path="/adminSignin" component={SignInSideSuper} />
-        <Route path="/" component={SignInSide} />
+        <Route path="/" exact component={SignInSide} />
+        <Route path="/user" render={props => <UserLayout {...props} />} />
+        <Route path="/EditUser" component={UserEdit} />
+        <Route path="/Ajoutsalle" component={Ajoutsalle} />
+        <Route path="/Editsalle" component={Editsalle} />
 
 
     </Switch>

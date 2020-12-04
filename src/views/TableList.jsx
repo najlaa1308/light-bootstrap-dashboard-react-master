@@ -21,6 +21,8 @@ import { Grid, Row, Col, Table } from "react-bootstrap";
 import Card from "components/Card/Card.jsx";
 import { thArray, tdArray } from "variables/Variables.jsx";
 import Button from "../components/CustomButton/CustomButton";
+import Delete from "@material-ui/icons/Delete";
+import IconButton from "@material-ui/core/IconButton";
 
 class TableList extends Component {
   render() {
@@ -50,7 +52,9 @@ class TableList extends Component {
                         <td>31-08-1998</td>
                         <td>1-A-05</td>
                         <td>TERRY HENNRY</td>
-                        <td><a>Modifier</a> / <a>Annuler</a></td>
+                        <td><IconButton aria-label="Mise a jour" color={"primary"} size={"medium"}>
+                          <Delete />
+                        </IconButton></td>
                       </tr>
                     </tbody>
                   </Table>

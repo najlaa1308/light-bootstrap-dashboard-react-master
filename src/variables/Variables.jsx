@@ -266,7 +266,7 @@ var style = {
 // // // For tables
 // //
 //
-const thArray = ["Numéro de réservation", "Date de réservation", "Salle réservée", "Responsable département","Action"];
+const thArray = ["Numéro de réservation", "Date de réservation", "Salle réservée", "Responsable département"];
 //
 const tdArray = [
   ["1", "Dakota Rice", "$36,738", "Niger", "Oud-Turnhout"],
