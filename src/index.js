@@ -34,7 +34,9 @@ ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path="/admin" render={props => <AdminLayout {...props} />} />
+        <Route path="/adminSignin" component={SignInSideSuper} />
         <Route path="/" component={SignInSide} />
+
 
     </Switch>
   </BrowserRouter>,

@@ -19,12 +19,14 @@ import Accueil from "views/Accueil.jsx";
 import UserProfile from "views/UserProfile.jsx";
 import TableList from "views/TableList.jsx";
 import Réserver from "views/Réserver.jsx";
+import ListeSalles from "./views/Liste des salles";
+import ListeUsers from "./views/Liste des utilisateurs";
 
 const AccueilRoutes = [
   {
     path: "/Accueil",
     name: "Accueil",
-    icon: "pe-7s-graph",
+    icon: "pe-7s-home",
     component: Accueil,
     layout: "/admin"
   },
@@ -36,8 +38,8 @@ const AccueilRoutes = [
     layout: "/admin"
   },
   {
-    path: "/table",
-    name: "Liste de mes réservations",
+    path: "/tableDesReservations",
+    name: "Liste des réservations",
     icon: "pe-7s-note2",
     component: TableList,
     layout: "/admin"
@@ -45,8 +47,22 @@ const AccueilRoutes = [
   {
     path: "/réserver",
     name: "Réserver",
-    icon: "pe-7s-headphones",
+    icon: "pe-7s-diskette",
     component: Réserver,
+    layout: "/admin"
+  },
+  {
+    path: "/tableDesUsers",
+    name: "Liste des utilisateurs",
+    icon: "pe-7s-users",
+    component: ListeUsers,
+    layout: "/admin"
+  },
+  {
+    path: "/tableDesSalles",
+    name: "Liste des salles",
+    icon: "pe-7s-server",
+    component: ListeSalles,
     layout: "/admin"
   },
 ];

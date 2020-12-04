@@ -50,7 +50,7 @@ class TableList extends Component {
                         <td>31-08-1998</td>
                         <td>1-A-05</td>
                         <td>TERRY HENNRY</td>
-                        <td><a>Modifier</a> <a>Annuler</a></td>
+                        <td><a>Modifier</a> / <a>Annuler</a></td>
                       </tr>
                     </tbody>
                   </Table>

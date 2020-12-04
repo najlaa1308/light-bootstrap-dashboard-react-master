@@ -17,6 +17,7 @@
 */
 import React, { Component } from "react";
 import { NavItem, Nav, NavDropdown, MenuItem } from "react-bootstrap";
+import Button from "../CustomButton/CustomButton";
 
 class AdminNavbarLinks extends Component {
   render() {
@@ -27,6 +28,9 @@ class AdminNavbarLinks extends Component {
     );
     return (
       <div>
+        <Button bsStyle="error" pullRight fill type="submit" href={"/"}>
+          Se déconnecter
+        </Button>
 
       </div>
     );

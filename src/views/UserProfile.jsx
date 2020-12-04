@@ -44,7 +44,7 @@ class UserProfile extends Component {
                 content={
                   <form>
                     <FormInputs
-                      ncols={["col-md-5", "col-md-3", "col-md-4"]}
+                      ncols={["col-md-4", "col-md-3", "col-md-5"]}
                       properties={[
                         {
                           label: "Département",
@@ -85,7 +85,7 @@ class UserProfile extends Component {
                       ]}
                     />
                     <FormInputs
-                      ncols={["col-md-12"]}
+                      ncols={["col-md-6"]}
                       properties={[
                         {
                           label: "Numéro de téléphone",
@@ -100,7 +100,7 @@ class UserProfile extends Component {
 
                     </Row>
                     <Button bsStyle="info" pullRight fill type="submit">
-                      Enregistrer
+                      Mise à jour
                     </Button>
                     <div className="clearfix" />
                   </form>
